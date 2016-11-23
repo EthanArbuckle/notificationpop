@@ -44,7 +44,7 @@ void touch_event(void* target, void* refcon, IOHIDServiceRef service, IOHIDEvent
                     }
 
                     SBBulletinBannerItem *bannerItem = bannerContext.item;
-                    if (!bannerItem || [bannerItem action]) {
+                    if (!bannerItem || ![bannerItem action]) {
                         return;
                     }
 
